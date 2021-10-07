@@ -1,0 +1,483 @@
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body{
+    font-family: 'Raleway', sans-serif; 
+}
+.main{
+    width: 94%;
+    margin-left: 3%;
+    margin-top: 3%;
+}
+.blue{
+    color: #0065fc;
+}
+.grey{
+    color: #d9d9d9;
+}
+/*/////////////////////////////////////
+                 HEADER
+////////////////////////////////////*/
+
+/*Menu*/
+.head__up a{
+    display: block;
+    text-decoration: none;
+    position: relative;
+}
+.head__up a:hover::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #0065fc;
+    bottom: 40px;
+}
+.head__up{
+    display: grid;
+    grid-template-rows: 60px;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
+}
+.reservia{
+    grid-row: 1;
+    grid-column: 1 / 2;
+}
+.link__1{
+    grid-column: 2 / 3;
+    margin: auto;
+    
+}
+.link__2{
+    grid-column: 3 / 4;
+    text-align: center;
+    margin: auto;
+    color: black;
+}
+.link__3{
+    grid-column: 4 / 5;
+    text-align: center;
+    margin: auto;
+}
+h2, h4{
+    line-height: 30px;;
+}
+h2{
+    margin-top: 10px;;
+}
+h4{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+/*FORMULAIRE*/
+form{
+    height: 50px;
+    font-size: 0;
+}
+
+.local{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    border-radius: 1rem 0 0 1rem;
+    padding-top: 15px;
+    text-align: center;      
+}
+#field{
+    height: 50px;
+    width: 226px;
+    padding-top: 5px;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    border-left: transparent;
+    border-right: transparent;
+    
+}
+.search__2{
+    height: 50px;
+    width: 132px;
+    font-size: 18px;
+    background-color: #0065fc;
+    color: white;
+    border-radius: 0 1rem 1rem 0;
+    padding-top: 3px;
+    border-color: transparent;    
+}
+.fa-search{
+    font-size: 18px;
+    opacity: 0;
+}
+
+/*FILTRES*/
+
+.filter{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.filter__search{
+    display: flex;
+    flex-wrap: wrap;
+    width: 66%;
+    align-items: center;
+}
+.filter__h3{
+    line-height: 50px;
+}
+.button{
+    margin-left: 30px;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    justify-content: start;
+    font-size: 18px;
+    border: 3px solid #f2f2f2;
+    border-left: transparent;
+    padding: 0px 0px 0px 0;
+    border-radius: 2rem;
+}
+.rounded{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: #deecff;
+}
+.button__one{
+    width: 192px;
+}
+.button__two{
+    width: 153px;
+}
+.button__three{
+    width: 186px;
+}
+.button__four{
+    width: 243px;
+}
+.p__two{
+    padding-left: 10px;
+}
+.info{
+    border: 1px solid #f2f2f2;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 20px;
+}
+/*////////////////////////////////////////////////
+               FIN DU HEADER         
+/////////////////////////////////////////////////*/
+
+/* Galerie de la 1ère section*/
+.central__part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section__1{
+    width: 62%;
+    background-color: #f2f2f2;
+    height: 620px;
+    display: grid;
+    grid-template-rows: 80px 210px 210px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 40px;
+    border-radius: 2rem;   
+}
+.section__1 h2{
+    grid-row: 1;
+    grid-column: 1 / 4;
+    height: 70;
+    line-height: 70px;
+    padding-left: 20px;
+}
+
+.div1__img--all{
+    display: inline-block;
+    margin: auto;
+    width: 243px;
+    height: 185px;
+    text-decoration: none;
+    color: black;
+    border: 6px solid white;
+    border-radius: 1rem;  
+}
+.text__1{
+    width: 243px;
+    height: 78px;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    position: relative;
+    top: 96px;
+    right: 6px;   
+}
+.text__1 p{
+    padding-left: 10px;
+    padding-top: 10px;  
+    line-height: 10px;
+   
+}
+.img__1, .img__2, .img__3, .img__4, .img__5, .img__6{
+    background-position-y: -35px;
+    background-size: cover; 
+}
+.img__1{
+    background-image: url("hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+    grid-row: 2;
+    grid-column: 1 / 2;
+    
+}
+.img__2{
+    background-image: url("hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+    grid-row: 2;
+    grid-column: 2 / 3;
+}
+.img__3{
+    background-image: url("hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+    grid-row: 2;
+    grid-column: 3 / 4;
+}
+.img__4{
+    background-image: url("hebergements/2_large/annie-recadee.jpg");
+    grid-row: 3;
+    grid-column: 1 / 2;
+}
+.img__5{
+    background-image: url("hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+    grid-row: 3;
+    grid-column: 2 / 3;
+}
+.img__6{
+    background-image: url("hebergements/2_large/febrian-section1.jpg");
+    grid-row: 3; 
+    grid-column: 3 / 4;
+}
+.affichez{
+    text-decoration: none;
+    color: black;
+    margin-top: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* galerie de la section 2*/
+
+.section__2{
+    width: 30%;
+    height: 620px;
+    background-color: #f2f2f2;
+    border-radius: 2rem;
+    margin-top: 40px;
+         
+}
+.populous{
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+.fa-chart-line{
+    width: 30px;
+    height: 90px;
+    font-size: 30px;
+    padding-top: 32px;    
+}
+.emile, .creative, .febrian-recadre{
+    display: block;
+    display: flex;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+    justify-content: center;       
+}
+.section2__img{
+    width: 125px;
+    height: 139px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+    border: 6px solid white;
+}
+.emile__img{
+    background-image: url("hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");       
+    
+}
+.creative__img{
+    background-image: url("hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    
+   
+}
+.febrian-recadre__img{
+    background-image: url("hebergements/2_large/febrian-recadrée.jpg");   
+   
+}
+.text__2{
+    width: 212px;
+    height: 139px;
+    background-color: white;
+    border-radius: 0 1rem 1rem 0;
+    border: 6px solid white;
+}
+
+/* Galerie de la 3eme section*/
+.titre1{
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.section__3{
+    width: 100%;
+    height: 444px;
+    display: flex;
+    
+}
+
+/*Gauche*/
+.section__3--gauche{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 237px 170px;
+    grid-template-columns: 1fr 1fr;  
+}
+.section__3 a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.section__3 p{
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.reno, .kilyan{
+    width: 300px;
+    height: 444px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    box-shadow: -3px 0px 17px 0px rgba(242,242,242,1);
+}
+.reno{
+    background-image: url("activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    border-radius: 1rem;
+}
+.texteimage__1, .texteimage__4{
+    top: 389px;   
+}
+.paul{
+    background-image: url("activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+    width: 300px;
+    height: 242px;
+    background-size: cover;
+    background-position: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    border-radius: 1rem;
+    box-shadow: -3px 0px 17px 0px rgba(242,242,242,1);
+}
+.texteimage__2{
+    top: 186px;
+}
+.kevin{
+    width: 300px;
+    height: 168px;
+    background-image: url("activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin-top: 39px;
+    border-radius: 1rem;
+    box-shadow: -3px 0px 17px 0px rgba(242,242,242,1);
+}
+.texteimage__3{
+    top: 113px;
+}
+
+/*Droite*/
+.section__3--droit{
+    width: 50%;
+    display: grid;
+    grid-template-rows: 210px 170px;
+    grid-template-columns: 1fr 1fr;
+    height: 444px;
+    
+}
+.kilyan{
+    background-image: url("activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+    height: 444px;
+    width: 300px;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    border-radius: 1rem;
+}
+.florian{
+    background-image: url("activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    width: 300px;
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    border-radius: 1rem;
+    box-shadow: -3px 0px 17px 0px rgba(242,242,242,1);
+}
+.texteimage__5{
+    top: 135px;
+}
+.lena{
+    background-image: url("activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 213px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin-top: 21px;
+    border-radius: 1rem;
+    box-shadow: -3px 0px 17px 0px rgba(242,242,242,1);
+}
+.texteimage__6{
+    top: 158px;
+}
+.texteimage{
+    width: 300px;
+    height: 57px;
+    background-color: white;
+    border-radius: 0 0 1rem 1rem;
+    position: relative;
+}
+
+/*///////////////////////////////////
+              FOOTER
+////////////////////////////////////*/
+
+footer{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    height: 216px;
+}
+.propos{
+    margin-left: 3%;
+}
+.propos, .nos__heberg, .assistance{
+    padding-right: 230px;
+}

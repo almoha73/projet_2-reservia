@@ -1,0 +1,43 @@
+.central__part{
+    flex-direction: column;
+    width: 100%;
+}
+.section__1{
+    width: 100%;
+}
+.section__1 h2{
+    padding-left: 55px;
+}
+.section__2{
+    width: 66%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*section 3*/
+.titre1{
+    height: 50px;
+    margin-top: 50px;
+    margin-left: 15%;
+}
+.section__3{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 900px;
+    width: 80%;
+}
+.section__3--droit, .section__3--gauche{
+    width: 100%;
+    margin-left: 150px;
+}
+
+/*FOOTER*/
+footer{
+    height: 260px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.propos, .nos__heberg, .assistance{
+    padding-right: 100px;
+}

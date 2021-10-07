@@ -352,8 +352,9 @@ form{
 .section__3--gauche{
     width: 50%;
     display: grid;
-    grid-template-rows: 237px 170px;
+    grid-template-rows: 244px 170px;
     grid-template-columns: 1fr 1fr;  
+    height: 460px;
 }
 .section__3 a{
     display: block;
@@ -415,14 +416,13 @@ form{
 .section__3--droit{
     width: 50%;
     display: grid;
-    grid-template-rows: 210px 170px;
+    grid-template-rows: 244px 170px;
     grid-template-columns: 1fr 1fr;
-    height: 444px;
+    height: 460px;
     
 }
 .kilyan{
     background-image: url("activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    height: 444px;
     width: 300px;
     grid-row: 1 / 3;
     grid-column: 1 / 2;
